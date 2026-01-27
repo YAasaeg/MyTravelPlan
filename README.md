@@ -29,7 +29,7 @@
   <img src="screenshots/Profile.png" width="200" alt="个人信息页" />
 </div>
 
-## �🛠 技术栈
+## 🛠 技术栈
 
 *   **开发语言**: ArkTS (TypeScript)
 *   **UI 框架**: ArkUI
