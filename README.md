@@ -20,7 +20,7 @@
     *   智能对话，获取旅游建议
     *   支持上下文的聊天记录保存
 
-## � 应用截图
+## 📱 应用截图
 
 <div align="center">
   <img src="screenshots/Login.png" width="200" alt="登录页" />
