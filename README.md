@@ -20,7 +20,16 @@
     *   智能对话，获取旅游建议
     *   支持上下文的聊天记录保存
 
-## 🛠 技术栈
+## � 应用截图
+
+<div align="center">
+  <img src="screenshots/Login.png" width="200" alt="登录页" />
+  <img src="screenshots/Plan.png" width="200" alt="计划页" />
+  <img src="screenshots/Chat.png" width="200" alt="AI对话页" />
+  <img src="screenshots/Profile.png" width="200" alt="个人信息页" />
+</div>
+
+## �🛠 技术栈
 
 *   **开发语言**: ArkTS (TypeScript)
 *   **UI 框架**: ArkUI

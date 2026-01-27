@@ -27,7 +27,7 @@ interface DeepSeekMessage {
 }
 
 export class DeepSeekService {
-  private static readonly API_KEY: string = 'sk-7dc749a187c44154943b6bb4e9aa1e60'; // 替换为你的DeepSeek API密钥
+  private static readonly API_KEY: string = 'API'; // 替换为你的DeepSeek API密钥
   private static readonly API_URL: string = 'https://api.deepseek.com/v1/chat/completions'; // DeepSeek API地址
 
   public static async sendMessage(message: string): Promise<string> {

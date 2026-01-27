@@ -58,7 +58,7 @@ export class DatabaseManager {
     )`;
     await this.rdbStore.executeSql(createPlans);
 
-    // Chat History Table
+    //聊天记录表
     const createChat = `CREATE TABLE IF NOT EXISTS chat_history (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       user_id INTEGER NOT NULL,
@@ -198,6 +198,13 @@ export class DatabaseManager {
       };
       return await this.rdbStore.update(fallbackBucket, predicates);
     }
+  }
+
+  public async deletePlanById(id: number): Promise<number> {
+    if (!this.rdbStore) return -1;
+    const predicates = new relationalStore.RdbPredicates('plans');
+    predicates.equalTo('id', id);
+    return await this.rdbStore.delete(predicates);
   }
 
   // 聊天记录操作

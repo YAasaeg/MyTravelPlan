@@ -87,7 +87,29 @@ export struct PlanDetail {
               router.back();
             }
           })
-
+        Button('删除')
+          .backgroundColor(Theme.ColorBackground)
+          .fontColor(Theme.ColorError)
+          .height(36)
+          .margin({ left: 'auto' })
+          .onClick(async () => {
+            if (!this.plan || !this.plan.id) return;
+            const res = await promptAction.showDialog({
+              title: '确认删除',
+              message: '删除后不可恢复，确定删除该计划？',
+              buttons: [ { text: '取消' , color: '#666666'}, { text: '删除', color: '#FF4081'} ]
+            });
+            if (res.index === 1) {
+              const db: DatabaseManager = DatabaseManager.getInstance();
+              const affected = await db.deletePlanById(this.plan.id);
+              if (affected >= 0) {
+                promptAction.showToast({ message: '已删除' });
+                router.replaceUrl({ url: 'pages/Index' })
+              } else {
+                promptAction.showToast({ message: '删除失败' });
+              }
+            }
+          })
         Button('保存')
           .backgroundColor(Theme.ColorPrimary)
           .fontColor(Theme.ColorSurface)
