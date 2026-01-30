@@ -2,7 +2,7 @@
 
 这是一个基于 OpenHarmony 的旅游计划应用程序。它结合了本地数据库存储和 AI 智能对话功能，帮助用户轻松制定和管理旅游行程。
 
-## ✨ 主要功能
+## 主要功能
 
 *   **用户管理**
     *   用户注册与登录
@@ -20,7 +20,7 @@
     *   智能对话，获取旅游建议
     *   支持上下文的聊天记录保存
 
-## 📱 应用截图
+##  应用截图
 
 <div align="center">
   <img src="screenshots/Login.png" width="200" alt="登录页" />
@@ -29,7 +29,7 @@
   <img src="screenshots/Profile.png" width="200" alt="个人信息页" />
 </div>
 
-## 🛠 技术栈
+## 技术栈
 
 *   **开发语言**: ArkTS (TypeScript)
 *   **UI 框架**: ArkUI
@@ -38,7 +38,7 @@
 *   **网络通信**: @ohos.net.http
 *   **AI 服务**: DeepSeek API
 
-## 📂 项目结构
+##  项目结构
 
 ```
 d:\MyTravelPlan
@@ -54,7 +54,7 @@ d:\MyTravelPlan
 └── oh_modules/             # 第三方依赖
 ```
 
-## 🚀 快速开始
+## 快速开始
 
 ### 环境要求
 
@@ -74,12 +74,10 @@ d:\MyTravelPlan
 *   **API Key**: 项目目前在 `DeepSeekService.ets` 中使用了硬编码的 API Key。在实际部署或公开代码前，请确保替换为您自己的 Key，并建议将其移至配置文件或环境变量中以保证安全。
 *   **网络权限**: 应用需要联网权限 (`ohos.permission.INTERNET`) 才能访问 AI 服务。
 
-## 📝 待办事项
+##  待办事项
 
 *   [ ] 添加更多 AI 对话模型支持
 *   [ ] 增加计划提醒功能
 *   [ ] 优化 UI/UX 设计
 
-## 📄 许可证
-
-本项目仅供学习和演示使用。
+## 本项目仅供学习和演示使用。
