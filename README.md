@@ -27,5 +27,5 @@
 
 ## 注意事项
 
-*   **API Key**: 项目目前在 `DeepSeekService.ets` 中使用了硬编码的 API Key。在实际部署或公开代码前，请确保替换为您自己的 Key，并建议将其移至配置文件或环境变量中以保证安全。
+*   **API Key**: 项目目前在 `DeepSeekService.ets` 中使用了硬编码的 API Key，请替换为您自己的 Key。
 *   **网络权限**: 应用需要联网权限 (`ohos.permission.INTERNET`) 才能访问 AI 服务。
