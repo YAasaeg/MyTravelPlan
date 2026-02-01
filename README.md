@@ -1,8 +1,8 @@
-###
+## MYTravelPlan（我的旅行计划）
 
 基于鸿蒙的旅游计划应用。结合了本地数据库存储和 AI 智能对话功能，帮助用户轻松制定和管理旅游行程。
 
-##  应用截图
+## 应用截图
 
 <div align="center">
   <img src="screenshots/Login.png" width="200" alt="登录页" />
